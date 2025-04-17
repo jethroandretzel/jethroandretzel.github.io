@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    background-color: #F7F3F0;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+body.loaded {
+  opacity: 1;
+}
+
+.save-the-date-section {
+    align-items: center;
+    text-align: center;
+}
+
+
+
+@media screen  and (max-width: 767px) {
+
+   
+    .save-the-date-section {
+        align-items: center;
+   }
+
+   .header-section {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+   }
+
+   .header-section h1 {
+    color: #D4B2A7;
+    font-size: 32px;
+   }
+
+   .mid-section {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+  }
+  
+  .date h3 {
+    margin: 0;
+    color: #F2ACB9;
+    opacity: 45%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 200px;
+    line-height: 1;
+    text-align: left;
+  }
+  
+  .save-our-date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+  }
+  
+  .save-our-date h3 {
+    margin: 0;
+    color: #7A8D81;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 1.5;
+    text-align: right;
+  }
+  
+  .month {
+    padding-left: 50px;
+  }
+
+  .date1 {
+    padding-left: 150px;
+  }
+
+  .year {
+    padding-left: 50px;
+    padding-top: 25px;
+  }
+
+  .save {
+    padding-right: 50px;
+  }
+
+  .our {
+    padding-right: 150px;
+  }
+
+  .date2 {
+    padding-right: 32px;
+  }
+
+  .days-countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: -54px;
+  }
+
+  .days-count {
+    color: #A38F84;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+  }
+
+  .days-to-go {
+    font-family: "Cinzel Decorative", serif;
+    font-size: 24px;
+  }
+
+
+
+
+
+  .date {
+    animation: slideInLeft 0.8s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .save-our-date {
+    animation: slideInRight 0.8s ease-out forwards;
+    animation-delay: 0.5s; /* comes in slightly after */
+    opacity: 0;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+
+
+
+
+  
+
+  .motif-section {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .motif-title {
+    font-family: "Cinzel Decorative", serif;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .line {
+    display: block;
+    width: 2px;              
+    height: 35px;           
+    background-color: #A38F84;
+    margin: 0;
+  }
+
+  .motif-colors span {
+    display: inline-block;
+    width: 36px;            
+    height: 36px;          
+    border-radius: 50%;
+    margin-right: 6px;
+  }
+
+  .color1 {
+    background-color: #D9D9D9;
+  }
+
+  .color2 {
+    background-color: #E7D7C8;
+  }
+
+  .color3 {
+    background-color: #D4B2A9;
+  }
+
+  .color4 {
+    background-color: #F2ACB9;
+  }
+
+  .color5 {
+    background-color: #CFC6C1;
+  }
+
+  .color6 {
+    background-color: #A38F84;
+  }
+
+  .color7 {
+    background-color: #7A8D81;
+  }
+
+  .ceremony {
+    display: flex;
+    justify-self: center;
+    gap: 12px;
+    font-family: "Cinzel Decorative", serif;
+    font-size: 24px;
+    align-items: center;
+    margin-bottom: -32px;
+  }
+
+  .reception {
+    display: flex;
+    justify-self: center;
+    gap: 12px;
+    font-family: "Cinzel Decorative", serif;
+    font-size: 24px;
+    align-items: center;
+
+  }
+
+
+  }
